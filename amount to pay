@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double bill;
+    cin >> bill;
+    if (bill >= 1000) {
+        double discount = bill * 0.10;
+        double amountToPay = bill - discount;
+        cout << "Amount to pay: " << amountToPay;
+    } else {
+        cout << "Amount to pay: " << bill;
+    }
+    return 0;
+}
