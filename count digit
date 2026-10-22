@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, count = 0;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    int temp = num;
+    if (temp == 0) {
+        count = 1;
+    } else {
+        if (temp < 0) temp = -temp; // handle negative numbers
+        while (temp > 0) {
+            temp /= 10;
+            count++;
+        }
+    }
+
+    cout << "Digits = " << count << endl;
+
+    return 0;
+}
